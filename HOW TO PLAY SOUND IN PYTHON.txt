@@ -1,0 +1,6 @@
+HOW TO PLAY SOUND IN PYTHON:
+1. import pygame pygame. init()
+
+2. my_sound = pygame. mixer. Sound('path/to/my/soundfile.wav')
+
+3. my_sound. play()

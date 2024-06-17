@@ -1,0 +1,22 @@
+def game_start():
+   global answer, question
+#Creates a variable which is assigned to a randomized number between 1 and 12.
+   int_1 = random.randint(1, 12)
+   int_2 = random.randint(1, 12)
+   operators = ['+', '-', '*', '/']
+#2nd variable for the snd number which is part of the maths question. Also chosen at random (1-12).
+   displayQuestion = "What is {} {} {}?".format(int_1, operator, int_2)
+   operator = [random].choice(operator)
+#This determines the question.
+   question = '{} {} {}'.format(int_1, operator, int_2)
+#This displays the question  with a random operator
+   print (displayQuestion)
+   answer = input("Please enter: ")
+
+if answer == question:
+        print("You are correct")
+        score += 1
+else:
+        print("Incorrect")
+
+game_start()
